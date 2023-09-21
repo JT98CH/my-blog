@@ -1,7 +1,7 @@
 ---
 title: 01
 layout: post
-post-image: "https://github.com/JT98CH/my-blog/blob/main/assets/images/MCOM%20Business%20Article%20Final%20(1).pdf"
+post-image: ""
 description: My first view of data science as a freshman
 tags:
 - data science
