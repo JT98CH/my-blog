@@ -1,5 +1,5 @@
 ---
-title: 01
+title: How to use Tableau in data science, basic charts
 layout: post
 post-image: ""
 description: My first view of data science as a freshman
