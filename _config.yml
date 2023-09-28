@@ -11,7 +11,7 @@ title: A little bit about Data Science
 # Description of the Site
 description: The goal is to turn DATA into information, and information into INSIGHT
 # URL of Image of the Site
-site-image: /WhatATheme/assets/images/meta.jpg
+site-image: main/assets/images/chris-ried-ieic5Tq8YMk-unsplash.jpg
 # Keywords of the Site
 site-keywords: Site, Template, Theme
 # URL for the Image of custom Favicon
@@ -43,7 +43,7 @@ disqus-shortname: /
 # Name of the Author
 author-name: Jeffry Troll
 # URL for the Image of the Author
-author-image: main/assets/images/Picture_profile.jpeg
+author-image: main/assets/images/Picture_profile.jpg
 author-about: "My name is Jeffry Troll, I'm a senior stat student at BYU aspiring to be a data scientist."
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/JT98CH
