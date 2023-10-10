@@ -23,11 +23,26 @@ The first step is to connect to the data you want to explore. This example shows
 
 <INSERT IMAGE HERE>
 
-### Build the view
+### Build the parameter
 In the Data pane, click on Create Parameter.<be>
 <INSERT IMAGE HERE>
 
-* Here is a an example for the formula, the purpose of this is to assign the categories of interest. In this case, 
+* Choose a name for the parameter, in this case "p.Breakdown".
+* Choose Integer as the Data Type.
+* Choose List as Allowable Values.
+* Add the categories of interest to the list.
+* Click Ok.
 
 <INSERT IMAGE HERE>
+
+### Build the breakdown
+In the Data pane, click on Create calculated field.<be>
+<INSERT IMAGE HERE>
+
+* Add a formula, in this case, the purpose is to assign the group, categories, or breakdown of interest.
+* Click Ok.
+
+<INSERT IMAGE HERE>
+
+
 
