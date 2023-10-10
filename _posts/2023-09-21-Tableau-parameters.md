@@ -69,7 +69,7 @@ This step is to start our viz, in this case, the buttons.<be>
 * Drag min(1) to "Columns".
 * Drag "Breakdown to "Label". Double-click, so you can edit inside "of the bubble". Erase everything and write "Gender" or your first category on the parameter list.
 * Click on Label. Here you can edit the format and alignment of the text, in this case, I selected centered.
-* Click over the X-axis, it should got highlighted, now Right-click and uncheck the option "Show Header". (You can do the same with the title)
+* Click over the X-axis, it should be got highlighted, now Right-click and uncheck the option "Show Header". (You can do the same with the title)
 
 INSERT IMAGE HERE
 
