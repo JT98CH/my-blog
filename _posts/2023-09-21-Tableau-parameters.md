@@ -24,7 +24,9 @@ The first step is to connect to the data you want to explore. This example shows
 INSERT IMAGE HERE
 
 ### Build the parameter
-In the Data pane, click on Create Parameter.<be>
+This step is to set the parameter.<be>
+
+* In the Data pane, click on Create Parameter.
 INSERT IMAGE HERE
 
 * Choose a name for the parameter, in this case "p.Breakdown".
@@ -36,13 +38,42 @@ INSERT IMAGE HERE
 INSERT IMAGE HERE
 
 ### Build the breakdown
-In the Data pane, click on Create calculated field.<be>
+This step is to set the categories.<be>
+
+* In the Data pane, click on Create calculated field.
 INSERT IMAGE HERE
 
+* Add a name for the new calculated field, in this case, just "Breakdown"
 * Add a formula, in this case, the purpose is to assign the group, categories, or breakdown of interest.
 * Click Ok.
 
 INSERT IMAGE HERE
+
+### Build the placeholders
+This is to prepare the buttons and actions through placeholders. (Don't worry if you don't understand, it will make sense later)<be>
+
+* In the Data pane, click on Create calculated field.
+INSERT IMAGE HERE
+
+* Add a name for the new calculated field, in this case, "min(0)".
+* Add a formula, in this case, the purpose is to assign a placeholder. (Later we will use them as a reference to set an action)
+* Click Ok.
+* Now we need another min(value) for each category, in this case 3 so repeat this process, but instead of 0, change it to 1 and then 2 and so on. You should be good if you have min(0), min(1), min(2), and min(3). 
+
+INSERT IMAGE HERE
+
+### Build the buttons
+This step is to start our viz, in this case, the buttons.<be>
+
+* In the Data pane, drag min(0) to "Details", under Marks section.
+* Drag min(1) to "Columns".
+* Drag "Breakdown to "Label". Double-click, so you can edit inside "of the bubble". Erase everything and write "Gender" or your first category on the parameter list.
+* Click on Label. Here you can edit the format and alignment of the text, in this case, I selected centered.
+* Click over the X-axis, it should got highlighted, now Right-click and uncheck the option "Show Header". (You can do the same with the title)
+
+INSERT IMAGE HERE
+
+
 
 
 
