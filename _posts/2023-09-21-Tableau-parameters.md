@@ -58,13 +58,14 @@ INSERT IMAGE HERE
 * Add a name for the new calculated field, in this case, "min(0)".
 * Add a formula, in this case, the purpose is to assign a placeholder. (Later we will use them as a reference to set an action)
 * Click Ok.
-* Now we need another min(value) for each category, in this case 3 so repeat this process, but instead of 0, change it to 1 and then 2 and so on. You should be good if you have min(0), min(1), min(2), and min(3). 
+* Now we need to repeat this process, creating another min(value) for each category, in this case 3. The difference will be that instead of 0, change it to 1 and then 2, and so on. You should be good if you have min(0), min(1), min(2), and min(3). 
 
 INSERT IMAGE HERE
 
 ### Build the buttons
 This step is to start our viz, in this case, the buttons.<be>
 
+* Add a new worksheet, called "Gender button".
 * In the Data pane, drag min(0) to "Details", under Marks section.
 * Drag min(1) to "Columns".
 * Drag "Breakdown to "Label". Double-click, so you can edit inside "of the bubble". Erase everything and write "Gender" or your first category on the parameter list.
@@ -72,6 +73,11 @@ This step is to start our viz, in this case, the buttons.<be>
 * Click over the X-axis, it should be got highlighted, now Right-click and uncheck the option "Show Header". (You can do the same with the title)
 
 INSERT IMAGE HERE
+
+* Now we need to repeat this process, so go ahead and re-do for each category. Change the names respectively and instead of using min(1), use min(2) and min(3).
+
+INSERT IMAGE HERE
+
 
 
 
