@@ -37,7 +37,7 @@ INSERT IMAGE HERE
 
 INSERT IMAGE HERE
 
-### Build the breakdown
+### Set the breakdown
 This step is to set the categories.<be>
 
 * In the Data pane, click on Create calculated field.
@@ -49,7 +49,7 @@ INSERT IMAGE HERE
 
 INSERT IMAGE HERE
 
-### Build the placeholders
+### Set the placeholders
 This is to prepare the buttons and actions through placeholders. (Don't worry if you don't understand, it will make sense later)<be>
 
 * In the Data pane, click on Create calculated field.
@@ -78,7 +78,47 @@ INSERT IMAGE HERE
 
 INSERT IMAGE HERE
 
+* ADD EXPLANATION FOR CHECK
 
+### Create a basis viz
+This step is to create the main visualization.<be>
+
+* Add a new worksheet, called "Basic Viz".
+* In the Data pane, drag Salary to "Text", under Marks section.
+* Click on "Salary" and change the measure to AVG. By doing this we are getting the average Salary.
+* Drag "Breakdown" to the rows section.
+* Drag "Start Date" to the colummns section.
+* By doing this we are getting the average Salary for each year, you change the viz in the right corner under "Show me". Also you can another "Breakdown" to the color section.
+  
+INSERT IMAGE HERE
+
+### Build the Dashboard
+This step is to build the dashboard, connecting the buttons of categories to our main viz.<be>
+
+* Click on "New Dashboard", the second icon at the bottom section.
+* Double-click in "Main Viz" and it will automatically fit the dashboard.
+
+INSERT IMAGE HERE
+
+* Click "Floating", under the object section and drag the button worksheets to the dashboard.
+* Re-organize and change size according to your preference. It might be helpful to click under the "Layout", so you can identify the coordinates of each floating object, in this case, each button worksheet.
+
+INSERT IMAGE HERE
+
+### Set Actions
+This step is to create the interactive function, through the actions, in this step, we will use our placeholders. The goal here is to click each category (the floating objects), so the main viz will change according to the selected category.<be>
+
+* Click Actions, under the Dashboard.
+* Click on "Add Action". Choose "Change Parameter".
+* Change name to "Gender button".
+* For Source Sheets, select the worksheet where is the Gender button, in this case "Gender button".
+* For Target Parameter, select p.Breakdown.
+* For Source Field, choose min(1).
+* For Aggregation, choose None.
+  
+* Now we need to repeat the process for each button, so change accordingly and notice that for Source Sheets and Source Field, you should select the values that belong to each category. In this case, for "Gender" = min(1), for "Management" = min(2), for "Team" = min(3).
+
+INSERT IMAGE HERE
 
 
 
