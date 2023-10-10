@@ -21,11 +21,11 @@ The first step is to connect to the data you want to explore. This example shows
 * After you connect to the CSV data, the Data Source page shows the sheets or tables in your data. Drag the "employees" table to the canvas to start exploring that data.
 * Click the sheet tab to go to the new worksheet and begin your analysis.
 
-<INSERT IMAGE HERE>
+INSERT IMAGE HERE
 
 ### Build the parameter
 In the Data pane, click on Create Parameter.<be>
-<INSERT IMAGE HERE>
+INSERT IMAGE HERE
 
 * Choose a name for the parameter, in this case "p.Breakdown".
 * Choose Integer as the Data Type.
@@ -33,16 +33,16 @@ In the Data pane, click on Create Parameter.<be>
 * Add the categories of interest to the list.
 * Click Ok.
 
-<INSERT IMAGE HERE>
+INSERT IMAGE HERE
 
 ### Build the breakdown
 In the Data pane, click on Create calculated field.<be>
-<INSERT IMAGE HERE>
+INSERT IMAGE HERE
 
 * Add a formula, in this case, the purpose is to assign the group, categories, or breakdown of interest.
 * Click Ok.
 
-<INSERT IMAGE HERE>
+INSERT IMAGE HERE
 
 
 
