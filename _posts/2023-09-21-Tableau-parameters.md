@@ -8,6 +8,6 @@ tags:
 - Tableau
 - interactive viz
 ---
-> ### This topic assumes that you know the very basics of tableau, here is a good tutorial for new users. [here](https://jekyllrb.com/){:targe="https://help.tableau.com/current/pro/desktop/en-us/getstarted_buildmanual_ex1basic.htm"}
+> ### This topic assumes that you know the very basics of tableau, [here](https://jekyllrb.com/){:targe="https://help.tableau.com/current/pro/desktop/en-us/getstarted_buildmanual_ex1basic.htm"} is a good tutorial for new users.
 ---
 
