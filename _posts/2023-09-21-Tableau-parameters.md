@@ -56,7 +56,7 @@ This is to prepare the buttons and actions through placeholders. (Don't worry if
 INSERT IMAGE HERE
 
 * Add a name for the new calculated field, in this case, "min(0)".
-* Add a formula, in this case, the purpose is to assign a placeholder. (Later we will use them as a reference to set an action)
+* Add a formula, "float(min(0))" in this case, the purpose is to assign a placeholder. (Later we will use them as a reference to set an action)
 * Click Ok.
 * Now we need to repeat this process, creating another min(value) for each category, in this case 3. The difference will be that instead of 0, change it to 1 and then 2, and so on. You should be good if you have min(0), min(1), min(2), and min(3). 
 
@@ -78,7 +78,17 @@ INSERT IMAGE HERE
 
 INSERT IMAGE HERE
 
-* ADD EXPLANATION FOR CHECK
+* Click on Create Calculated Field.
+* Write "Check Gender" as Name.
+* Write formula "[p.Breakdown]=1".
+* Drag "Check Gender" to Color, under Marks.
+
+INSERT IMAGE HERE
+
+* Now we need to repeat this process, so go ahead and re-do for each category. Change the names respectively and instead of "[p.Breakdown]=1", use 2 and 3.
+* Note: Also you can change the color so it makes sense which Category are you selecting
+
+INSERT IMAGE HERE
 
 ### Create a basis viz
 This step is to create the main visualization.<be>
