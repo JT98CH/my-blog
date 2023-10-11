@@ -22,7 +22,7 @@ The first step is to connect to the data you want to explore. This example shows
 * Click the sheet tab to go to the new worksheet and begin your analysis.
 
 **<br>
-![Image 1](/my-blog/assets/images/Screenshot%2023-10-10%at%2.55.59%PM.png)
+![Image 1](my-blog/blob/main/assets/images/Screenshot%202023-10-10%20at%202.55.59%20PM.png)
 
 ### Build the parameter
 This step is to set the parameter.<be>
