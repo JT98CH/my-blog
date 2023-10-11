@@ -27,7 +27,8 @@ The first step is to connect to the data you want to explore. This example shows
 This step is to set the parameter.<be>
 
 * In the Data pane, click on Create Parameter.
-INSERT IMAGE HERE
+
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 * Choose a name for the parameter, in this case "p.Breakdown".
 * Choose Integer as the Data Type.
@@ -35,34 +36,34 @@ INSERT IMAGE HERE
 * Add the categories of interest to the list.
 * Click Ok.
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.03%PM])
 
 ### Set the breakdown
 This step is to set the categories.<be>
 
 * In the Data pane, click on Create calculated field.
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.23%PM])
 
 * Add a name for the new calculated field, in this case, just "Breakdown"
 * Add a formula, in this case, the purpose is to assign the group, categories, or breakdown of interest.
 * Click Ok.
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.07.44%PM])
 
 ### Set the placeholders
 This is to prepare the buttons and actions through placeholders. (Don't worry if you don't understand, it will make sense later)<be>
 
 * In the Data pane, click on Create calculated field.
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.07.45%PM])
 
 * Add a name for the new calculated field, in this case, "min(0)".
 * Add a formula, "float(min(0))". In this case, the purpose is to assign a placeholder. (Later we will use them as a reference to set an action)
 * Click Ok.
 * Now we need to repeat this process, creating another min(value) for each category, in this case 3. The difference will be that instead of 0, change it to 1 and then 2, and so on. You should be good if you have min(0), min(1), min(2), and min(3). 
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 ### Build the buttons
 This step is to start our viz, in this case, the buttons.<be>
@@ -74,23 +75,23 @@ This step is to start our viz, in this case, the buttons.<be>
 * Click on Label. Here you can edit the format and alignment of the text, in this case, I selected centered.
 * Click over the X-axis, it should be got highlighted, now Right-click and uncheck the option "Show Header". (You can do the same with the title)
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 * Now we need to repeat this process, so go ahead and re-do for each category. Change the names respectively and instead of using min(1), use min(2) and min(3).
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 * Click on Create Calculated Field.
 * Write "Check Gender" as Name.
 * Write formula "[p.Breakdown]=1".
 * Drag "Check Gender" to Color, under Marks.
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 * Now we need to repeat this process, so go ahead and re-do for each category. Change the names respectively and instead of "[p.Breakdown]=1", use 2 and 3.
 * Note: Also you can change the color so it makes sense which Category are you selecting
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 ### Create a basis viz
 This step is to create the main visualization.<be>
@@ -102,7 +103,7 @@ This step is to create the main visualization.<be>
 * Drag "Start Date" to the colummns section.
 * By doing this we are getting the average Salary for each year, you change the viz in the right corner under "Show me". Also you can another "Breakdown" to the color section.
   
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 ### Build the Dashboard
 This step is to build the dashboard, connecting the buttons of categories to our main viz.<be>
@@ -110,12 +111,12 @@ This step is to build the dashboard, connecting the buttons of categories to our
 * Click on "New Dashboard", the second icon at the bottom section.
 * Double-click in "Main Viz" and it will automatically fit the dashboard.
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 * Click "Floating", under the object section and drag the button worksheets to the dashboard.
 * Re-organize and change size according to your preference. It might be helpful to click under the "Layout", so you can identify the coordinates of each floating object, in this case, each button worksheet.
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 ### Set Actions
 This step is to create the interactive function, through the actions, in this step, we will use our placeholders. The goal here is to click each category (the floating objects), so the main viz will change according to the selected category.<be>
@@ -130,7 +131,7 @@ This step is to create the interactive function, through the actions, in this st
   
 * Now we need to repeat the process for each button, so change accordingly and notice that for Source Sheets and Source Field, you should select the values that belong to each category. In this case, for "Gender" = min(1), for "Management" = min(2), for "Team" = min(3).
 
-INSERT IMAGE HERE
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 
 
