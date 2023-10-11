@@ -21,8 +21,7 @@ The first step is to connect to the data you want to explore. This example shows
 * After you connect to the CSV data, the Data Source page shows the sheets or tables in your data. Drag the "employees" table to the canvas to start exploring that data.
 * Click the sheet tab to go to the new worksheet and begin your analysis.
 
-**<br>
-![Image 1]([my-blog/assets/images/Screenshot 2023-10-10 at 2.55.59 PM.png](https://github.com/JT98CH/my-blog/blob/b04cdd8ecd292d06adbcff85ed197556c9e7f9eb/assets/images/Screenshot%202023-10-10%20at%202.55.59%20PM.png))
+![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%2.55.59%PM.png])
 
 ### Build the parameter
 This step is to set the parameter.<be>
