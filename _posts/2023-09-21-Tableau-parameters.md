@@ -17,7 +17,7 @@ Today we are going to learn how to take advantage of this dynamic power of param
 
 ### Connect to your data
 The first step is to connect to the data you want to explore. This example shows how to connect a CSV file data in Tableau Desktop.<br>
-* Open Tableau. On the start page, under Connect, click More. In the Open dialog box, navigate to the CSV file in your local computer. For this example, I'm using the Employee data from [Kaggle](https://help.tableau.com/current/pro/desktop/en-us/getstarted_buildmanual_ex1basic.htm){:targe="https://www.kaggle.com/datasets/prakharjadaun/employee-data?rvi=1"}
+* Open Tableau. On the start page, under Connect, click More. In the Open dialog box, navigate to the CSV file on your local computer. For this example, I'm using the Employee data from [Kaggle]([https://help.tableau.com/current/pro/desktop/en-us/getstarted_buildmanual_ex1basic.htm](https://www.kaggle.com/datasets/prakharjadaun/employee-data?rvi=1)){:targe="https://www.kaggle.com/datasets/prakharjadaun/employee-data?rvi=1"}
 * After you connect to the CSV data, the Data Source page shows the sheets or tables in your data. Drag the "employees" table to the canvas to start exploring that data.
 * Click the sheet tab to go to the new worksheet and begin your analysis.
 
