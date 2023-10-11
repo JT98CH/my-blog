@@ -21,7 +21,7 @@ The first step is to connect to the data you want to explore. This example shows
 * After you connect to the CSV data, the Data Source page shows the sheets or tables in your data. Drag the "employees" table to the canvas to start exploring that data.
 * Click the sheet tab to go to the new worksheet and begin your analysis.
 
-INSERT IMAGE HERE
+/my-blog/assets/images/Screenshot 2023-10-10 at 2.55.59 PM.png
 
 ### Build the parameter
 This step is to set the parameter.<be>
@@ -41,6 +41,7 @@ INSERT IMAGE HERE
 This step is to set the categories.<be>
 
 * In the Data pane, click on Create calculated field.
+
 INSERT IMAGE HERE
 
 * Add a name for the new calculated field, in this case, just "Breakdown"
@@ -53,10 +54,11 @@ INSERT IMAGE HERE
 This is to prepare the buttons and actions through placeholders. (Don't worry if you don't understand, it will make sense later)<be>
 
 * In the Data pane, click on Create calculated field.
+
 INSERT IMAGE HERE
 
 * Add a name for the new calculated field, in this case, "min(0)".
-* Add a formula, "float(min(0))" in this case, the purpose is to assign a placeholder. (Later we will use them as a reference to set an action)
+* Add a formula, "float(min(0))". In this case, the purpose is to assign a placeholder. (Later we will use them as a reference to set an action)
 * Click Ok.
 * Now we need to repeat this process, creating another min(value) for each category, in this case 3. The difference will be that instead of 0, change it to 1 and then 2, and so on. You should be good if you have min(0), min(1), min(2), and min(3). 
 
