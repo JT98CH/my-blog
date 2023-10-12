@@ -89,12 +89,10 @@ This step is to start our viz, in this case, the buttons.<be>
 * Write formula "[p.Breakdown]=1".
 * Drag "Check Gender" to Color, under Marks.
 
-
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 4.43.30 PM.png)
 
 * Now we need to repeat this process, so go ahead and re-do for each category. Change the names respectively and instead of "[p.Breakdown]=1", use 2 and 3.
 * Note: Also you can change the color so it makes sense which Category are you selecting
-
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
 
 ### Create a basis viz
 This step is to create the main visualization.<be>
@@ -106,23 +104,25 @@ This step is to create the main visualization.<be>
 * Drag "Start Date" to the colummns section.
 * By doing this we are getting the average Salary for each year, you change the viz in the right corner under "Show me". Also you can another "Breakdown" to the color section.
   
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 4.43.40 PM.png)
 
 ### Build the Dashboard
 This step is to build the dashboard, connecting the buttons of categories to our main viz.<be>
 
 * Click on "New Dashboard", the second icon at the bottom section.
 * Double-click in "Main Viz" and it will automatically fit the dashboard.
-
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
-
 * Click "Floating", under the object section and drag the button worksheets to the dashboard.
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-12 at 3.43.09 PM.png)
+
 * Re-organize and change size according to your preference. It might be helpful to click under the "Layout", so you can identify the coordinates of each floating object, in this case, each button worksheet.
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-12 at 3.44.36 PM.png)
 
 ### Set Actions
 This step is to create the interactive function, through the actions, in this step, we will use our placeholders. The goal here is to click each category (the floating objects), so the main viz will change according to the selected category.<be>
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-12 at 3.45.41 PM.png)
 
 * Click Actions, under the Dashboard.
 * Click on "Add Action". Choose "Change Parameter".
@@ -131,11 +131,16 @@ This step is to create the interactive function, through the actions, in this st
 * For Target Parameter, select p.Breakdown.
 * For Source Field, choose min(1).
 * For Aggregation, choose None.
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-12 at 3.46.59 PM.png)
   
 * Now we need to repeat the process for each button, so change accordingly and notice that for Source Sheets and Source Field, you should select the values that belong to each category. In this case, for "Gender" = min(1), for "Management" = min(2), for "Team" = min(3).
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-12 at 3.47.43 PM.png)
 
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-12 at 3.48.16 PM.png)
 
+### Conclusion
 
+Tableau provides an immense array of powerful features for data visualization and interactive dashboarding. As we've seen, parameters stand as one of its unique assets, granting flexibility and dynamism to your visualizations. By enabling users to interact with the dashboard and control aspects of it, parameters enhance the storytelling potential of data, making insights more accessible and user-friendly. What we've walked through in this tutorial barely scratches the surface of what's possible with Tableau. As you further delve into its capabilities, you'll find that the true strength of Tableau lies in its ability to seamlessly blend data analysis with intuitive design, and parameters play a pivotal role in that. So, get creative, experiment, and remember: in the world of data visualization, your canvas is as dynamic and vibrant as you make it!
 
