@@ -63,7 +63,7 @@ This is to prepare the buttons and actions through placeholders. (Don't worry if
 * Click Ok.
 * Now we need to repeat this process, creating another min(value) for each category, in this case 3. The difference will be that instead of 0, change it to 1 and then 2, and so on. You should be good if you have min(0), min(1), min(2), and min(3). 
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 3.07.46 PM.png)
 
 ### Build the buttons
 This step is to start our viz, in this case, the buttons.<be>
@@ -75,18 +75,18 @@ This step is to start our viz, in this case, the buttons.<be>
 * Click on Label. Here you can edit the format and alignment of the text, in this case, I selected centered.
 * Click over the X-axis, it should be got highlighted, now Right-click and uncheck the option "Show Header". (You can do the same with the title)
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 3.31.15 PM.png)
 
 * Now we need to repeat this process, so go ahead and re-do for each category. Change the names respectively and instead of using min(1), use min(2) and min(3).
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 4.43.29 PM.png)
 
 * Click on Create Calculated Field.
 * Write "Check Gender" as Name.
 * Write formula "[p.Breakdown]=1".
 * Drag "Check Gender" to Color, under Marks.
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 4.43.31 PM.png)
 
 * Now we need to repeat this process, so go ahead and re-do for each category. Change the names respectively and instead of "[p.Breakdown]=1", use 2 and 3.
 * Note: Also you can change the color so it makes sense which Category are you selecting
