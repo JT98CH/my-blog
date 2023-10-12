@@ -1,7 +1,7 @@
 ---
 title: How to use Tableau in data science, parameters
 layout: post
-post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUEPC4IFADOF5VG4QVN26Z64GG"
+post-image: "https://raw.githubusercontent.com/JTCH98/my-blog/main/assets/images/hris-ried-ieic5Tq8YMk-unsplash.png"
 description: My first view of data science as a freshman
 tags:
 - data science
@@ -21,8 +21,6 @@ The first step is to connect to the data you want to explore. This example shows
 * After you connect to the CSV data, the Data Source page shows the sheets or tables in your data. Drag the "employees" table to the canvas to start exploring that data.
 * Click the sheet tab to go to the new worksheet and begin your analysis.
 
-![Test Image](/assets/images/Screenshot 2023-10-10 at 2.55.59 PM.png)
-
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 2.55.59 PM.png)
 
 ### Build the parameter
@@ -30,7 +28,7 @@ This step is to set the parameter.<be>
 
 * In the Data pane, click on Create Parameter.
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.02%PM.png])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 3.02.02 PM.png)
 
 * Choose a name for the parameter, in this case "p.Breakdown".
 * Choose Integer as the Data Type.
@@ -38,27 +36,27 @@ This step is to set the parameter.<be>
 * Add the categories of interest to the list.
 * Click Ok.
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.03%PM])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 3.02.03 PM.png)
 
 ### Set the breakdown
 This step is to set the categories.<be>
 
 * In the Data pane, click on Create calculated field.
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.02.23%PM])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 3.02.23 PM.png)
 
 * Add a name for the new calculated field, in this case, just "Breakdown"
 * Add a formula, in this case, the purpose is to assign the group, categories, or breakdown of interest.
 * Click Ok.
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.07.44%PM])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 3.07.44 PM.png)
 
 ### Set the placeholders
 This is to prepare the buttons and actions through placeholders. (Don't worry if you don't understand, it will make sense later)<be>
 
 * In the Data pane, click on Create calculated field.
 
-![Test Image](/my-blog/assets/images/Screenshot%2023-10-10%at%3.07.45%PM])
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 3.07.45 PM.png)
 
 * Add a name for the new calculated field, in this case, "min(0)".
 * Add a formula, "float(min(0))". In this case, the purpose is to assign a placeholder. (Later we will use them as a reference to set an action)
