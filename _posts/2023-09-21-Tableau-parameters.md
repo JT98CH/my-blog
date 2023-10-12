@@ -1,7 +1,7 @@
 ---
 title: How to use Tableau in data science, parameters
 layout: post
-post-image: "https://raw.githubusercontent.com/JTCH98/my-blog/main/assets/images/hris-ried-ieic5Tq8YMk-unsplash.png"
+post-image: "https://raw.githubusercontent.com/JTCH98/my-blog/main/assets/images/Tableau-Pic-2.png"
 description: My first view of data science as a freshman
 tags:
 - data science
