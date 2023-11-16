@@ -27,8 +27,6 @@ In this blog post, I'll share the journey of my data-driven exploration into You
 
 ### Gathering the data:
 
-I published the code to gather the data here: https://github.com/JT98CH/PROJECT_YOUTUBE/blob/main/PROJECT_YOUTUBE_DATA.ipynb
-
 [I published the code to gather the data here](https://github.com/JT98CH/PROJECT_YOUTUBE/blob/main/PROJECT_YOUTUBE_DATA.ipynb){:targe="[https://github.com/JT98CH/PROJECT_YOUTUBE/blob/main/PROJECT_YOUTUBE_DATA.ipynb](https://github.com/JT98CH/PROJECT_YOUTUBE/blob/main/PROJECT_YOUTUBE_DATA.ipynb))"}
 
 Getting Started: The Setup
