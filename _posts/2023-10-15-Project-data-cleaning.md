@@ -29,13 +29,16 @@ In this blog post, I'll share the journey of my data-driven exploration into You
 
 [I published the code to gather the data here](https://github.com/JT98CH/PROJECT_YOUTUBE/blob/main/PROJECT_YOUTUBE_DATA.ipynb)
 
-Getting Started: The Setup
+Getting Started:
+
 As with any adventure, it began with the basics, setting up. So, I set up the Python environment by importing the necessary libraries like Pandas, Seaborn, and Matplotlib. Another important tool is the Google API client. I won’t get into the details about how to get a key because, at the beginning of this post, I shared a video that’s better than me in explaining that, so check that first. I just securely read the key from a file.
 
-Targeting Channels: Finding Our Data Source
+Targeting Channels:
+
 Once you have everything set up, it’s time to choose or identify the YouTube channels to analyze. Due to the nature of the project, I only selected a few channel IDs (Joshua Weissman, Guga Foods, and Nick DiGiovanni) and initiated our YouTube API client with the API key. This is like our gateway to accessing YouTube's reservoir of data.
 
-The Collection Expedition: Gathering the Actual Data
+Gathering the Actual Data:
+
 The data collection was a multi-step voyage:
 
 -Channel Analysis: With the get_channel_stats function, we delved into each channel's core, extracting vital statistics like content details and viewer engagement.
