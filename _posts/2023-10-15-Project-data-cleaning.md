@@ -20,4 +20,8 @@ YouTube has been an important part of my life, I'm not proud of how much time I 
 
 ### Finding insights
 
+In progress
+
 ### Conclusion
+
+In progress
