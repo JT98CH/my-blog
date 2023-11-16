@@ -1,7 +1,7 @@
 ---
 title: My Project of Youtube (Part 1)
 layout: post
-post-image: "https://raw.githubusercontent.com/JTCH98/my-blog/main/assets/images/youtube-data-image.png"
+post-image: "https://raw.githubusercontent.com/JTCH98/my-blog/master/assets/images/youtube-data-image.png"
 description: A little bit about parameters in Tableau, easy dynamic viz
 tags:
 - data science
