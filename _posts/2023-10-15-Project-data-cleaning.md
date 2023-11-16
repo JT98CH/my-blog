@@ -30,13 +30,14 @@ In this blog post, I'll share the journey of my data-driven exploration into You
 [I published the code to gather the data here](https://github.com/JT98CH/PROJECT_YOUTUBE/blob/main/PROJECT_YOUTUBE_DATA.ipynb)
 
 Getting Started: The Setup
-As with any adventure, it began with the basics, setting up. So, I set up the Python environment by importing the necessaries libraries like Pandas, Seaborn, and Matplotlib. Another important tool is the Google API client. I won’t get into the details about how to get a key because at the beginning of this post, I shared a video that’s better than me in explaining that, so check that first. I just securely read the key from a file.
+As with any adventure, it began with the basics, setting up. So, I set up the Python environment by importing the necessary libraries like Pandas, Seaborn, and Matplotlib. Another important tool is the Google API client. I won’t get into the details about how to get a key because, at the beginning of this post, I shared a video that’s better than me in explaining that, so check that first. I just securely read the key from a file.
 
 Targeting Channels: Finding Our Data Source
 Once you have everything set up, it’s time to choose or identify the YouTube channels to analyze. Due to the nature of the project, I only selected a few channel IDs (Joshua Weissman, Guga Foods, and Nick DiGiovanni) and initiated our YouTube API client with the API key. This is like our gateway to accessing YouTube's reservoir of data.
 
 The Collection Expedition: Gathering the Actual Data
 The data collection was a multi-step voyage:
+
 -Channel Analysis: With the get_channel_stats function, we delved into each channel's core, extracting vital statistics like content details and viewer engagement.
 
 -Video List Compilation: Next, our get_video_list function acted like a net, capturing a comprehensive list of videos from each channel, ensuring even those hidden in the depths of YouTube were included.
@@ -45,14 +46,15 @@ The data collection was a multi-step voyage:
 
 -Video Detail Mining: Finally, the get_video_details function was our data miner, extracting rich details from each video such as titles, publication dates, and various engagement metrics.
 
-With our data collected, it was time to give it structure. We poured our data into a Pandas DataFrame, a versatile tool for data manipulation. 
+With our data collected, it was time to give it structure. We poured our data into Pandas DataFrame, a versatile tool for data manipulation. 
 
 Data, in its raw form, can be unwieldy. So, I refined it through:
+
 -Identifying Collaborations: By analyzing video titles, we marked out collaborations, adding a layer of understanding to our analysis.
 -Time Transformation: Video lengths, initially cryptic in ISO format, were converted into understandable minutes.
--Date Decoding: We transformed publication dates into Python's datetime objects, adding a column to represent the day of the week, unraveling patterns in publication schedules.
+-Date Decoding: We transformed publication dates into Python's datetime objects, adding a column to represent the day of the week, and unraveling patterns in publication schedules.
 
-Final step, I exported this cleaned, transformed data into a CSV file.
+Final step, I exported this cleaned and transformed data into a CSV file.
 
 ### Ethical Approach:
 
