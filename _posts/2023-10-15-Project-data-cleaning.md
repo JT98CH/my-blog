@@ -62,6 +62,3 @@ Even with Google providing the tools to scrape data from YouTube, recognizing th
 Embarking on this exploration into YouTube's algorithm has already been revelatory. Although I am only at the beginning of analyzing the data, it has started to illuminate a path through the intricate landscape of content creation. This project isn't merely about decoding numbers; it's about understanding the stories they tell.
 
 In my forthcoming post, I will dive deeper into the findings and share the insightful revelations from this analysis. Stay tuned as we continue to unravel the threads of YouTube success and lay the groundwork for our channel's content strategy.
-
-
-![image](https://github.com/JT98CH/my-blog/assets/62812785/f1d2319c-71d6-429b-be50-d10cd6c98b3a)
