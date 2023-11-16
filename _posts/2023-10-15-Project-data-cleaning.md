@@ -39,8 +39,6 @@ Once you have everything set up, it’s time to choose or identify the YouTube c
 
 Gathering the Actual Data:
 
-The data collection was a multi-step voyage:
-
 -Channel Analysis: With the get_channel_stats function, we delved into each channel's core, extracting vital statistics like content details and viewer engagement.
 
 -Video List Compilation: Next, our get_video_list function acted like a net, capturing a comprehensive list of videos from each channel, ensuring even those hidden in the depths of YouTube were included.
