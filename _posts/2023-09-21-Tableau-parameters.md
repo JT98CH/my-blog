@@ -7,6 +7,10 @@ tags:
 - data science
 - Tableau
 - interactive viz
+
+
+A little bit about parameters in Tableau, easy dynamic viz
+
 ---
 > ### This topic assumes that you know the very basics of tableau, [here](https://help.tableau.com/current/pro/desktop/en-us/getstarted_buildmanual_ex1basic.htm){:targe="https://help.tableau.com/current/pro/desktop/en-us/getstarted_buildmanual_ex1basic.htm"} is a good tutorial for new users.
 ---
