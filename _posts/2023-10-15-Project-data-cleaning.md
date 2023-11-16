@@ -23,11 +23,11 @@ With my wife, we shared a passion for culinary arts and food. Together, we've sp
 
 In this blog post, I'll share the journey of my data-driven exploration into YouTube's inner workings. Join me as we dissect these insights and learn how data can inform and elevate our YouTube content creation.
 
-[Here is the repository of the project](https://github.com/JT98CH/PROJECT_YOUTUBE.git){:target="[https://github.com/JT98CH/PROJECT_YOUTUBE.git](https://ww](https://github.com/JT98CH/PROJECT_YOUTUBE.git))"}
+[Here is the repository of the project](https://github.com/JT98CH/PROJECT_YOUTUBE.git)
 
 ### Gathering the data:
 
-[I published the code to gather the data here](https://github.com/JT98CH/PROJECT_YOUTUBE/blob/main/PROJECT_YOUTUBE_DATA.ipynb){:target="[https://github.com/JT98CH/PROJECT_YOUTUBE/blob/main/PROJECT_YOUTUBE_DATA.ipynb](https://github.com/JT98CH/PROJECT_YOUTUBE/blob/main/PROJECT_YOUTUBE_DATA.ipynb))"}
+[I published the code to gather the data here](https://github.com/JT98CH/PROJECT_YOUTUBE/blob/main/PROJECT_YOUTUBE_DATA.ipynb)
 
 Getting Started: The Setup
 As with any adventure, it began with the basics, setting up. So, I set up the Python environment by importing the necessaries libraries like Pandas, Seaborn, and Matplotlib. Another important tool is the Google API client. I won’t get into the details about how to get a key because at the beginning of this post, I shared a video that’s better than me in explaining that, so check that first. I just securely read the key from a file.
