@@ -7,7 +7,7 @@ tags:
 - data science
 - Tableau
 - interactive viz
-
+---
 
 A little bit about parameters in Tableau, easy dynamic viz
 
