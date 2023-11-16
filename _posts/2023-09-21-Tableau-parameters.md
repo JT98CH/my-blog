@@ -1,7 +1,7 @@
 ---
 title: How to use Tableau in data science, parameters
 layout: post
-post-image: https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 3.02.02 PM.png
+post-image: 'https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/Screenshot 2023-10-10 at 3.02.02 PM.png'
 description: A little bit about parameters in Tableau, easy dynamic viz
 tags:
 - data science
