@@ -37,17 +37,20 @@ Once you have everything setting up, now it’s time to choose or identify the Y
 
 The Collection Expedition: Gathering the Actual Data
 The data collection was a multi-step voyage:
-•	Channel Analysis: With the get_channel_stats function, we delved into each channel's core, extracting vital statistics like content details and viewer engagement.
-•	Video List Compilation: Next, our get_video_list function acted like a net, capturing a comprehensive list of videos from each channel, ensuring even those hidden in the depths of YouTube were included.
-•	Aggregating Video Data: The get_all_video_data_for_channels function was our aggregator, piecing together data from different channels into a cohesive whole.
-•	Video Detail Mining: Finally, the get_video_details function was our data miner, extracting rich details from each video such as titles, publication dates, and various engagement metrics.
+- Channel Analysis: With the get_channel_stats function, we delved into each channel's core, extracting vital statistics like content details and viewer engagement.
+
+- Video List Compilation: Next, our get_video_list function acted like a net, capturing a comprehensive list of videos from each channel, ensuring even those hidden in the depths of YouTube were included.
+
+- Aggregating Video Data: The get_all_video_data_for_channels function was our aggregator, piecing together data from different channels into a cohesive whole.
+
+- Video Detail Mining: Finally, the get_video_details function was our data miner, extracting rich details from each video such as titles, publication dates, and various engagement metrics.
 
 With our data collected, it was time to give it structure. We poured our data into a Pandas DataFrame, a versatile tool for data manipulation. 
 
 Data, in its raw form, can be unwieldy. So, I refined it through:
-•	Identifying Collaborations: By analyzing video titles, we marked out collaborations, adding a layer of understanding to our analysis.
-•	Time Transformation: Video lengths, initially cryptic in ISO format, were converted into understandable minutes.
-•	Date Decoding: We transformed publication dates into Python's datetime objects, adding a column to represent the day of the week, unraveling patterns in publication schedules.
+- Identifying Collaborations: By analyzing video titles, we marked out collaborations, adding a layer of understanding to our analysis.
+- Time Transformation: Video lengths, initially cryptic in ISO format, were converted into understandable minutes.
+- Date Decoding: We transformed publication dates into Python's datetime objects, adding a column to represent the day of the week, unraveling patterns in publication schedules.
 
 Final step, I exported this cleaned, transformed data into a CSV file.
 
