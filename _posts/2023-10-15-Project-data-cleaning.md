@@ -1,13 +1,3 @@
----
-title: My Project of Youtube (Part 1)
-layout: post
-post-image: assets/images/youtube-data-image.jpeg
-description: A little bit about my YouTube project
-tags:
-- data science
-- YouTube
-- API
----
 
 > ### Most of the knowledge of YouTube API I got from this video. [here](https://www.youtube.com/watch?v=SwSbnmqk3zY&t=3442s&ab_channel=techTFQ)
 
