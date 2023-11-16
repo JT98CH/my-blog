@@ -8,12 +8,8 @@ tags:
 - YouTube
 - API
 ---
- 
- A little bit about my YouTube project
- 
----
+
 > ### Most of the knowledge of YouTube API I got from this video. [here](https://www.youtube.com/watch?v=SwSbnmqk3zY&t=3442s&ab_channel=techTFQ){:targe="[https://help.tableau.com/current/pro/desktop/en-us/getstarted_buildmanual_ex1basic.htm](https://www.youtube.com/watch?v=SwSbnmqk3zY&t=3442s&ab_channel=techTFQ)"}.
----
 
 ### Unlocking YouTube's Secrets: A Data-Driven Approach to Video Success
 
