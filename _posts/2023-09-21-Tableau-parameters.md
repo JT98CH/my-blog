@@ -9,11 +9,7 @@ tags:
 - interactive viz
 ---
 
-A little bit about parameters in Tableau, easy dynamic viz
-
----
 > ### This topic assumes that you know the very basics of tableau, [here](https://help.tableau.com/current/pro/desktop/en-us/getstarted_buildmanual_ex1basic.htm){:targe="https://help.tableau.com/current/pro/desktop/en-us/getstarted_buildmanual_ex1basic.htm"} is a good tutorial for new users.
----
 
 # Parameters
 In Tableau, a parameter is a dynamic value that can replace a constant in a calculation, filter, or reference line. For example, if you have a formula that returns a value of Sales > 5000, you can replace 5000 with a parameter. This allows you to input different values or choose from a predefined list or range, making the visualization or result set dynamic based on that parameter.
