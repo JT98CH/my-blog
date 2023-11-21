@@ -35,8 +35,7 @@ As with any adventure, it began with the basics, setting up. So, I set up the Py
 
 Another important tool is the Google API client. I won’t get into the details about how to get a key because, at the beginning of this post, I shared a video that’s better than me in explaining that, so check that first. I just securely read the key from a file. The most
 
-'# Read API key from a file
-file = open("API_GOOGLE.txt", "r")
+'file = open("API_GOOGLE.txt", "r")
 api_key = file.read()
 file.close()'
 
