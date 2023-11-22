@@ -159,11 +159,11 @@ Once you have everything set up, it’s time to choose or identify the YouTube c
 </pre>
 
 With our data collected, it was time to give it structure. We poured our data into Pandas DataFrame, a versatile tool for data manipulation. 
-
 Data, in its raw form, can be unwieldy. So, I refined it through:
 
-1. Identifying Collaborations: By analyzing video titles, we marked out collaborations, adding a layer of understanding to our analysis.
- <pre>
+* Identifying Collaborations: By analyzing video titles, we marked out collaborations, adding a layer of understanding to our analysis.
+
+<pre>
   <code>
    def get_all_video_data_for_channels(youtube, channel_ids):
     all_video_data = []
@@ -185,11 +185,13 @@ Data, in its raw form, can be unwieldy. So, I refined it through:
         all_video_data.extend(video_data)
 
     return all_video_data
-    </code>
-  </pre>
-2. Time Transformation: Video lengths, initially cryptic in ISO format, were converted into understandable minutes.
-   <pre>
-    <code>
+  </code>
+</pre>
+
+ * Time Transformation: Video lengths, initially cryptic in ISO format, were converted into understandable minutes.
+
+<pre>
+  <code>
    def convert_to_minutes(iso_duration):
     minutes_match = re.search(r'(\d+)M', iso_duration)
     seconds_match = re.search(r'(\d+)S', iso_duration)
@@ -200,18 +202,19 @@ Data, in its raw form, can be unwieldy. So, I refined it through:
     return minutes + seconds/60
 
     df['duration_in_minutes'] = df['length'].apply(convert_to_minutes)
-    </code>
-  </pre>
-3. Date Decoding: We transformed publication dates into Python's datetime objects, adding a column to represent the day of the week, and unraveling patterns in publication schedules.
+  </code>
+</pre>
+  
+* Date Decoding: We transformed publication dates into Python's datetime objects, adding a column to represent the day of the week, and unraveling patterns in publication schedules.
 
 <pre>
   <code>
   df['published'] = df['published'].apply(lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ"))
 
-def get_weekday(date_string):
+  def get_weekday(date_string):
     return date_string.strftime("%A").lower() 
 
-df['day_published'] = df['published'].apply(get_weekday)
+  df['day_published'] = df['published'].apply(get_weekday)
   </code>
 </pre>
 
