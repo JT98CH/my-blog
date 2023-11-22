@@ -9,7 +9,7 @@ tags:
 ---
 
 > ### This is a walk-through project video on YouTube API creation that helps a lot.
-<iframe width="800" height="400" src="https://www.youtube.com/watch?v=SwSbnmqk3zY&t=3442s&ab_channel=techTFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="400" src="https://youtu.be/SwSbnmqk3zY?si=j6fvApzQM9mTqcfX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Unlocking YouTube's Secrets: A Data-Driven Approach to Video Success
 
@@ -118,14 +118,11 @@ With our data collected, it was time to give it structure. We poured our data in
 Data, in its raw form, can be unwieldy. So, I refined it through:
 
 1. Identifying Collaborations: By analyzing video titles, we marked out collaborations, adding a layer of understanding to our analysis.
-
-`df['collaboration'] = df['title'].str.contains('ft|Ft', case=False)`
+   `df['collaboration'] = df['title'].str.contains('ft|Ft', case=False)`
 2. Time Transformation: Video lengths, initially cryptic in ISO format, were converted into understandable minutes.
-
-`df['duration_in_minutes'] = df['length'].apply(convert_to_minutes)`
+   `df['duration_in_minutes'] = df['length'].apply(convert_to_minutes)`
 3. Date Decoding: We transformed publication dates into Python's datetime objects, adding a column to represent the day of the week, and unraveling patterns in publication schedules.
-
-`df['published'] = df['published'].apply(lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ"))`
+   `df['published'] = df['published'].apply(lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ"))`
 
 Final step, I exported this cleaned and transformed data into a CSV file.
 
