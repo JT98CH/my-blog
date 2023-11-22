@@ -91,23 +91,16 @@ Once you have everything set up, it’s time to choose or identify the YouTube c
 * Aggregating Video Data: The get_all_video_data_for_channels function was our aggregator, piecing together data from different channels into a cohesive whole.
 
 `def get_all_video_data_for_channels(youtube, channel_ids):
-    all_video_data = []`
-
+    all_video_data = []
     for ch_id in channel_ids:
         channel_stats = get_channel_stats(youtube, [ch_id]) 
-
         if not channel_stats:  
             continue
-        
-    
         channel_name = channel_stats[0]['snippet']['title']
-
         playlist_id = channel_stats[0]['contentDetails']['relatedPlaylists']['uploads']
         video_list = get_video_list(youtube, playlist_id)
         video_data = get_video_details(youtube, video_list, channel_name)  # Passing channel name
-        
         all_video_data.extend(video_data)
-
     return all_video_data`
 
 * Video Detail Mining: Finally, the get_video_details function was our data miner, extracting rich details from each video such as titles, publication dates, and various engagement metrics.
