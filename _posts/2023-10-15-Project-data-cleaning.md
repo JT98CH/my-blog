@@ -134,21 +134,22 @@ Gathering the Actual Data:
 
 * Video Detail Mining: Finally, the get_video_details function was our data miner, extracting rich details from each video such as titles, publication dates, and various engagement metrics.
 
-'video_data = get_all_video_data_for_channels(youtube, channel_id)
-df = pd.DataFrame(video_data)
-df'
+'video_data = get_all_video_data_for_channels(youtube, channel_id)'
 
 With our data collected, it was time to give it structure. We poured our data into Pandas DataFrame, a versatile tool for data manipulation. 
 
 Data, in its raw form, can be unwieldy. So, I refined it through:
 
 1. Identifying Collaborations: By analyzing video titles, we marked out collaborations, adding a layer of understanding to our analysis.
+
 'df['collaboration'] = df['title'].str.contains('ft|Ft', case=False)'
 
 2. Time Transformation: Video lengths, initially cryptic in ISO format, were converted into understandable minutes.
+
 'df['duration_in_minutes'] = df['length'].apply(convert_to_minutes)'
 
 3. Date Decoding: We transformed publication dates into Python's datetime objects, adding a column to represent the day of the week, and unraveling patterns in publication schedules.
+
 'df['published'] = df['published'].apply(lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ"))'
 
 Final step, I exported this cleaned and transformed data into a CSV file.
