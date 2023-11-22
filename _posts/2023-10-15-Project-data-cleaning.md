@@ -1,6 +1,7 @@
 ---
 title: My Project of Youtube (Part 1)
 layout: post
+post-image: "https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/output.png"
 description: A little bit about my YouTube project
 tags:
 - data science
