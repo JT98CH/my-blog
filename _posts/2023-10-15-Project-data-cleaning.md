@@ -9,7 +9,7 @@ tags:
 - API
 ---
 
-> ### This is a walk-through project video on YouTube API creation that helps a lot. [here](https://www.youtube.com/watch?v=SwSbnmqk3zY&t=3442s&ab_channel=techTFQ)
+> ### This is a walk-through project video on YouTube API creation that helps a lot. <iframe width="560" height="315" src="https://www.youtube.com/watch?v=SwSbnmqk3zY&t=3442s&ab_channel=techTFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Unlocking YouTube's Secrets: A Data-Driven Approach to Video Success
 
@@ -164,6 +164,6 @@ Standing on the precipice of launching our own YouTube channel, the ethical use 
 
 Embarking on this exploration into YouTube's algorithm has already been revelatory. Although I am only at the beginning of analyzing the data, it has started to illuminate a path through the intricate landscape of content creation. This project isn't merely about decoding numbers; it's about understanding the stories they tell.
 
-https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/output.png
+![Test Image](/my-blog/main/assets/images/output.png
 
 In my forthcoming post, I will dive deeper into the findings and share the insightful revelations from this analysis. Stay tuned as we continue to unravel the threads of YouTube success and lay the groundwork for our channel's content strategy.
