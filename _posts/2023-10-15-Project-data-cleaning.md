@@ -1,7 +1,7 @@
 ---
 title: My Project of Youtube (Part 1)
 layout: post
-post-image: "https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/output.png"
+post-image: "https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/youtube-data-image.jpeg"
 description: A little bit about my YouTube project
 tags:
 - data science
@@ -11,8 +11,6 @@ tags:
 
 > ### This is a walk-through project video on YouTube API creation that helps a lot.
 <iframe width="800" height="400" src="https://youtu.be/SwSbnmqk3zY?si=j6fvApzQM9mTqcfX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Unlocking YouTube's Secrets: A Data-Driven Approach to Video Success
 
 ## Introduction:
 
@@ -34,68 +32,46 @@ As with any adventure, it began with the basics, setting up. So, I set up the Py
 
 Another important tool is the Google API client. I won’t get into the details about how to get a key because, at the beginning of this post, I shared a video that’s better than me in explaining that, so check that first. I just securely read the key from a file. The most
 
-`file = open("API_GOOGLE.txt", "r")
-api_key = file.read()
-file.close()`
+<pre>
+  <code>
+   file = open("API_GOOGLE.txt", "r")
+   api_key = file.read()
+   file.close()
+  </code>
+</pre>
 
 Once you have everything set up, it’s time to choose or identify the YouTube channels to analyze. Due to the nature of the project, I only selected a few channel IDs (Joshua Weissman, Guga Foods, and Nick DiGiovanni) and initiated our YouTube API client with the API key. This is like our gateway to accessing YouTube's reservoir of data.
 
-`channel_id = ['UChBEbMKI1eCcejTtmI32UEw', 'UCfE5Cz44GlZVyoaYTHJbuZw', 'UCMyOj6fhvKFMjxUCp3b_3gA']
- youtube = build('youtube', 'v3', developerKey=api_key)`
+<pre>
+  <code>
+   # Define a list of YouTube channel IDs
+   channel_id = ['UChBEbMKI1eCcejTtmI32UEw', 'UCfE5Cz44GlZVyoaYTHJbuZw', 'UCMyOj6fhvKFMjxUCp3b_3gA']
 
+   # Initialize YouTube API client
+   youtube = build('youtube', 'v3', developerKey=api_key)
+  </code>
+</pre>
 
 * Channel Analysis: With the get_channel_stats function, we delved into each channel's core, extracting vital statistics like content details and viewer engagement.
 
-`def get_channel_stats(youtube, channel_id):
+<pre>
+  <code>
+   def get_channel_stats(youtube, channel_id):
     request = youtube.channels().list(
     part="snippet,contentDetails,statistics",
         id = channel_id)
     response = request.execute()
-    return response['items']`
+    return response['items']
+  </code>
+</pre>
  
 * Video List Compilation: Next, our get_video_list function acted like a net, capturing a comprehensive list of videos from each channel, ensuring even those hidden in the depths of YouTube were included.
 
-`def get_video_list(youtube, upload_id):
-    video_list = []
-    request = youtube.playlistItems().list(
-    part="snippet,contentDetails",
-    playlistId = upload_id,
-    maxResults=50)
-    next_page = True    
-    while next_page:
-        response = request.execute()
-        data = response['items']     
-        for video in data:
-            video_id = video['contentDetails']['videoId']
-            if video_id not in video_list:
-                video_list.append(video_id)                
-        if 'nextPageToken' in response.keys():
-            next_page = True          
-            request = youtube.playlistItems().list(
-                part="snippet,contentDetails",
-                playlistId = upload_id,
-                maxResults=50,
-                pageToken=response['nextPageToken']
-            )
-        else:
-            next_page = False            
-    return video_list`
- 
+`` 
 
 * Aggregating Video Data: The get_all_video_data_for_channels function was our aggregator, piecing together data from different channels into a cohesive whole.
 
-`def get_all_video_data_for_channels(youtube, channel_ids):
-    all_video_data = []
-    for ch_id in channel_ids:
-        channel_stats = get_channel_stats(youtube, [ch_id]) 
-        if not channel_stats:  
-            continue
-        channel_name = channel_stats[0]['snippet']['title']
-        playlist_id = channel_stats[0]['contentDetails']['relatedPlaylists']['uploads']
-        video_list = get_video_list(youtube, playlist_id)
-        video_data = get_video_details(youtube, video_list, channel_name)  # Passing channel name
-        all_video_data.extend(video_data)
-    return all_video_data`
+``
 
 * Video Detail Mining: Finally, the get_video_details function was our data miner, extracting rich details from each video such as titles, publication dates, and various engagement metrics.
 
@@ -106,11 +82,14 @@ With our data collected, it was time to give it structure. We poured our data in
 Data, in its raw form, can be unwieldy. So, I refined it through:
 
 1. Identifying Collaborations: By analyzing video titles, we marked out collaborations, adding a layer of understanding to our analysis.
-   `df['collaboration'] = df['title'].str.contains('ft|Ft', case=False)`
-2. Time Transformation: Video lengths, initially cryptic in ISO format, were converted into understandable minutes.
-   `df['duration_in_minutes'] = df['length'].apply(convert_to_minutes)`
-3. Date Decoding: We transformed publication dates into Python's datetime objects, adding a column to represent the day of the week, and unraveling patterns in publication schedules.
-   `df['published'] = df['published'].apply(lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ"))`
+   `df['collaboration'] =
+   df['title'].str.contains('ft|Ft', case=False)`
+3. Time Transformation: Video lengths, initially cryptic in ISO format, were converted into understandable minutes.
+   `df['duration_in_minutes'] =
+   df['length'].apply(convert_to_minutes)`
+4. Date Decoding: We transformed publication dates into Python's datetime objects, adding a column to represent the day of the week, and unraveling patterns in publication schedules.
+   `df['published'] =
+   df['published'].apply(lambda x: datetime.strptime(x, "%Y-%m-%dT%H:%M:%SZ"))`
 
 Final step, I exported this cleaned and transformed data into a CSV file.
 
@@ -124,6 +103,6 @@ Standing on the precipice of launching our own YouTube channel, the ethical use 
 
 Embarking on this exploration into YouTube's algorithm has already been revelatory. Although I am only at the beginning of analyzing the data, it has started to illuminate a path through the intricate landscape of content creation. This project isn't merely about decoding numbers; it's about understanding the stories they tell.
 
-![Test Image](/my-blog/main/assets/images/output.png)
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/output.png)
 
 In my forthcoming post, I will dive deeper into the findings and share the insightful revelations from this analysis. Stay tuned as we continue to unravel the threads of YouTube success and lay the groundwork for our channel's content strategy.
