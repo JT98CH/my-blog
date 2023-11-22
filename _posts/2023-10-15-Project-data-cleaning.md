@@ -60,22 +60,17 @@ Once you have everything set up, it’s time to choose or identify the YouTube c
     request = youtube.playlistItems().list(
     part="snippet,contentDetails",
     playlistId = upload_id,
-    maxResults=50)`
-    
-    next_page = True
-    
+    maxResults=50)
+    next_page = True    
     while next_page:
         response = request.execute()
-        data = response['items']
-        
+        data = response['items']     
         for video in data:
             video_id = video['contentDetails']['videoId']
             if video_id not in video_list:
-                video_list.append(video_id)
-                
+                video_list.append(video_id)                
         if 'nextPageToken' in response.keys():
-            next_page = True
-            
+            next_page = True          
             request = youtube.playlistItems().list(
                 part="snippet,contentDetails",
                 playlistId = upload_id,
@@ -83,8 +78,7 @@ Once you have everything set up, it’s time to choose or identify the YouTube c
                 pageToken=response['nextPageToken']
             )
         else:
-            next_page = False
-            
+            next_page = False            
     return video_list`
  
 
