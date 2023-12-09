@@ -244,7 +244,6 @@ What about the relationship between their submission day and the view? Let's fin
 
 </pre>
   </code>
-
 #Boxplot View per Day published
 #Define the desired order for the days
 day_order = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
@@ -259,22 +258,19 @@ plt.xlabel('Day of the Week')
 plt.ylabel('Views')
 
 plt.show()
-
- </code>
+  </code>
 </pre>
 
 I'm not surprised that videos that were uploaded during the weekend get more views, so this confirms my theory
 
 </pre>
   </code>
-
 correlation_matrix = df_year_cleaned[['view_count', 'comment_count', 'like_count', 'duration_in_minutes','short', 'collaboration']].corr()
 
 plot = sns.heatmap(correlation_matrix, annot=True, cmap="YlGnBu")
 
 plot.set_xticklabels(plot.get_xticklabels(), rotation=25, horizontalalignment='center', fontsize=8)
-
- </code>
+  </code>
 </pre>
 
 ## Key Insights:
