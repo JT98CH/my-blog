@@ -202,7 +202,7 @@ legend = lm._legend
 
 plt.show()
  </code>
-</pre
+</pre>
 
 Not quite as good as the likes and views, let come back again to the views but in a boxplot now
 
@@ -219,7 +219,7 @@ plt.ylabel('Views')
 
 plt.show()
  </code>
-</pre
+</pre>
 
 That's cool, it confirms that Nick DiGiovanni is a bigger YouTuber. Also, I like those boxplot so let's go to check the views by year
 
@@ -236,7 +236,7 @@ plt.ylabel('Views')
 
 plt.show()
  </code>
-</pre
+</pre>
 
 It looks like the bump of Covid is ending and fewer people are spending time on YouTube, or we need to wait until the year 2023 finishes, or people are getting less excited about Food and Cooking
 
@@ -261,7 +261,7 @@ plt.ylabel('Views')
 plt.show()
 
  </code>
-</pre
+</pre>
 
 I'm not surprised that videos that were uploaded during the weekend get more views, so this confirms my theory
 
@@ -275,7 +275,7 @@ plot = sns.heatmap(correlation_matrix, annot=True, cmap="YlGnBu")
 plot.set_xticklabels(plot.get_xticklabels(), rotation=25, horizontalalignment='center', fontsize=8)
 
  </code>
-</pre
+</pre>
 
 ## Key Insights:
 
