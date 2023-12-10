@@ -65,7 +65,7 @@ channel_name	title	published	description	length	tag	view_count	like_count	commen
   </code>
 </pre>
 
-Another important thing that I wanted to do before starting the to viz this data frame, I wanted to see if I will have missing or irrelevant data.
+Another important thing that I wanted to do before starting to viz this data frame, I wanted to see if I would have missing or irrelevant data.
 
 <pre>
   <code>
