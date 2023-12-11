@@ -324,3 +324,7 @@ I like to see the pattern of consistency to submit videos, this taught me that i
 
 ## Conclusion:
 
+You can explore the data here: <https://youtube-project-jt.streamlit.app/>
+
+I really like doing this project, even though I didn't discover some crazy or disruptive that will change the whole platform but I think it gives me a strong basis to start this future project and be more aware of what we need to do.
+
