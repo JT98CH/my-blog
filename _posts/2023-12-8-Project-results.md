@@ -290,36 +290,37 @@ In summary, the strongest correlation between likes and views (0.83) indicates a
 
 ## Key Insights:
 
-In summary, here are my key findings. We want to start a YouTube cooking channel, our first videos should be at least 10 minutes long. For our shorts, (because we need to do shorts as well to reach more audience and create our community) should be around 30 seconds.
-
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight1.png)
 
-Along with that, the titles for our videos should be around 50 characters long. In the case of the Shorts, a little less around 20.
+We want to start a YouTube cooking channel, our first videos should be at least 10 minutes long. For our shorts, (because we need to do shorts as well to reach more audience and create our community) should be around 30 seconds.
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight2.png)
 
-This proves my previous comment, if we want to reach more views and increase our views, uploading shorts will make the difference, we are not taking into account that we can re-use the format on other platforms to be more efficient in our efforts to reach different people for each site.
+Along with that, the titles for our videos should be around 50 characters long. In the case of the Shorts, a little less around 20.
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight3.png)
 
-This graph shows how engagement rates differ between shorts and video formats, again Short has a bigger rate on average for all three channels, this might require more knowledge to understand better what this means, it could be that because are shorts people tend to write and give more likes because it's easier and so on.
+This proves my previous comment, if we want to reach more views and increase our views, uploading shorts will make the difference, we are not taking into account that we can re-use the format on other platforms to be more efficient in our efforts to reach different people for each site.
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight4.png)
 
-Thanks to this graph we can use the Views and Likes as good indicators that a video is a success or not.
+This graph shows how engagement rates differ between shorts and video formats, again Short has a bigger rate on average for all three channels, this might require more knowledge to understand better what this means, it could be that because are shorts people tend to write and give more likes because it's easier and so on.
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight5.png)
 
-As I mentioned before, it looks like that was a bump during COVID-19, and I could say that Nick took advantage of Short to retain the increased views. 
-
-I like to see the pattern of consistency to submit videos, this taught me that in order to get the audience entertained you should have some kind of strategy and pattern to submit videos. 
+Thanks to this graph we can use the Views and Likes as good indicators that a video is a success or not.
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight6.png)
+
+As I mentioned before, it looks like that was a bump during COVID-19, and I could say that Nick took advantage of Short to retain the increased views. 
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7-1.png)
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7-2.png)
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7-3.png)
+
+I like to see the pattern of consistency to submit videos, this taught me that in order to get the audience entertained you should have some kind of strategy and pattern to submit videos. 
+
 ## Conclusion:
 
