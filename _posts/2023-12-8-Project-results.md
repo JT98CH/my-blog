@@ -97,7 +97,6 @@ Now, I want to know if I can find a common pattern in the length of the videos s
 
 <pre>
   <code>
-#Lenght of Videos
 plt.hist(df_year_cleaned['duration_in_minutes'], bins=25, edgecolor='black')
 plt.title('Histogram Length')
 plt.xlabel('Value')
