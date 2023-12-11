@@ -129,8 +129,8 @@ df_year_cleaned['short'] = np.where(df_year_cleaned['duration_in_minutes'] <= 1,
 
 Now, what about the title length? I wonder if a relationship or something is interesting about it.
 
-</pre>
-  </code>
+<pre>
+  <code>
 title_lengths = df_videos_clean['title'].str.len()
 plt.hist(title_lengths, bins=25, alpha=0.5, color='blue')
 plt.xlabel('Title Length')
@@ -147,8 +147,8 @@ Now let's dive into the actually fun part
 Do you think there's a relationship between likes and views?
 Let's see
 
-</pre>
-  </code>
+<pre>
+  <code>
 #more likes = more views?
 
 #Extract the data from the DataFrame
@@ -175,8 +175,8 @@ plt.show()
 
 I'm not sure, but it kind of looks linear, so let's see something better
 
-</pre>
-  </code>
+<pre>
+  <code>
 lm = sns.lmplot(x='like_count', y='view_count', hue='channel_name', data=df_videos_clean,
                 lowess=True, legend_out=False)
 legend = lm._legend
@@ -189,8 +189,8 @@ It's interesting to see the different slops for each YouTuber but it's indeed li
 
 What about the relationship between the length of the videos and their view?
 
-</pre>
-  </code>
+<pre>
+  <code>
 lm = sns.lmplot(x='duration_in_minutes', y='view_count', hue='channel_name', data=df_videos_clean,
                 lowess=True, legend_out=False)
 legend = lm._legend
@@ -201,8 +201,8 @@ plt.show()
 
 Not quite as good as the likes and views, let come back again to the views but in a boxplot now
 
-</pre>
-  </code>
+<pre>
+  <code>
 #boxplot View per Youtube Channel
 plt.figure(figsize=(10, 6))
 sns.boxplot(x='channel_name', y='view_count', data=df_videos_clean)
@@ -218,8 +218,8 @@ plt.show()
 
 That's cool, it confirms that Nick DiGiovanni is a bigger YouTuber. Also, I like those boxplot so let's go to check the views by year
 
-</pre>
-  </code>
+<pre>
+  <code>
 #View per Year
 plt.figure(figsize=(10, 6))
 sns.boxplot(x='year', y='view_count', data=df_videos_clean)
@@ -237,8 +237,8 @@ It looks like the bump of Covid is ending and fewer people are spending time on 
 
 What about the relationship between their submission day and the view? Let's find out
 
-</pre>
-  </code>
+<pre>
+  <code>
 #Boxplot View per Day published
 #Define the desired order for the days
 day_order = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
@@ -258,8 +258,8 @@ plt.show()
 
 I'm not surprised that videos that were uploaded during the weekend get more views, so this confirms my theory
 
-</pre>
-  </code>
+<pre>
+  <code>
 correlation_matrix = df_year_cleaned[['view_count', 'comment_count', 'like_count', 'duration_in_minutes','short', 'collaboration']].corr()
 
 plot = sns.heatmap(correlation_matrix, annot=True, cmap="YlGnBu")
