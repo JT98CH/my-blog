@@ -131,17 +131,13 @@ Now, what about the title length? I wonder if a relationship or something is int
 
 </pre>
   </code>
-#Checking Title lengths
-#Calculate the lengths of the strings in the 'title' column
 title_lengths = df_videos_clean['title'].str.len()
-
-#Create a histogram plot
 plt.hist(title_lengths, bins=25, alpha=0.5, color='blue')
 plt.xlabel('Title Length')
 plt.ylabel('Frequency')
 plt.title('Histogram of Title Lengths')
 plt.show()
- </code>
+  </code>
 </pre>
 
 The graph shows that it follows a normal distribution, I will consider that as something interesting
