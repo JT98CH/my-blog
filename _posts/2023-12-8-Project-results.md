@@ -93,7 +93,7 @@ df_year_cleaned = df[df['year'] >= 2018]
   </code>
 </pre>
 
-Now, I want to know if I can find a common pattern in the length of the videos submitted by these three YouTubers that I selected.
+Now, I want to know if I can find a common pattern in the length of the videos submitted by the three YouTubers that I selected.
 
 <pre>
   <code>
@@ -104,6 +104,8 @@ plt.ylabel('Frequency')
 plt.show()
   </code>
 </pre>
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/hist.png)
 
 It looks like I have YouTube videos and also Shorts, so I will classify them. 
 According to YouTube the max length of a "short" is 1 minute, so I will use that to the logic.
@@ -140,6 +142,8 @@ plt.show()
   </code>
 </pre>
 
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/hist2.png)
+
 The graph shows that it follows a normal distribution, I will consider that as something interesting
 
 Now let's dive into the actually fun part
@@ -173,6 +177,8 @@ plt.show()
  </code>
 </pre>
 
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/scatter.png)
+
 I'm not sure, but it kind of looks linear, so let's see something better
 
 <pre>
@@ -184,6 +190,8 @@ legend = lm._legend
 plt.show()
  </code>
 </pre>
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/line.png)
 
 It's interesting to see the different slops for each YouTuber but it's indeed linear
 
@@ -198,6 +206,8 @@ legend = lm._legend
 plt.show()
  </code>
 </pre>
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/line2.png)
 
 Not quite as good as the likes and views, let come back again to the views but in a boxplot now
 
@@ -216,7 +226,9 @@ plt.show()
  </code>
 </pre>
 
-That's cool, it confirms that Nick DiGiovanni is a bigger YouTuber. Also, I like those boxplot so let's go to check the views by year
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/boxplot.png)
+
+That's cool, it confirms that Nick DiGiovanni is a bigger YouTuber. Also, I like those boxplots, so let's go to check the views by year
 
 <pre>
   <code>
@@ -232,6 +244,8 @@ plt.ylabel('Views')
 plt.show()
  </code>
 </pre>
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/boxplot2.png)
 
 It looks like the bump of Covid is ending and fewer people are spending time on YouTube, or we need to wait until the year 2023 finishes, or people are getting less excited about Food and Cooking
 
@@ -256,6 +270,8 @@ plt.show()
   </code>
 </pre>
 
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/boxplot3.png)
+
 I'm not surprised that videos that were uploaded during the weekend get more views, so this confirms my theory
 
 <pre>
@@ -268,8 +284,26 @@ plot.set_xticklabels(plot.get_xticklabels(), rotation=25, horizontalalignment='c
   </code>
 </pre>
 
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/output.png)
+
 ## Key Insights:
 
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight1.png)
 
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight2.png)
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight3.png)
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight4.png)
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight5.png)
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight6.png)
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7-1.png)
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7-2.png)
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7-3.png)
 ## Conclusion:
 
