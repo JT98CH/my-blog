@@ -20,80 +20,28 @@ As I mentioned before, YouTube has been an important part of the day for me and 
 
 ## Vizulizations:
 
-As part of any EDA, I wanted to just see the data frame that we got from the API extraction.
+As part of the initial exploratory data analysis (EDA), I began by loading the dataset extracted from the YouTube API. However, I noticed that the first column, "Unnamed: 0," was unnecessary, so I removed it. Additionally, I added two new columns to the dataset: "engagement," calculated as the sum of comment_count and like_count divided by view_count, and "collaboration," which is binary (1 or 0) to indicate whether a video involved collaboration.
 
 <pre>
   <code>
-df = pd.read_csv("youtube_data.csv", index_col=False)
-df
-Unnamed: 0	channel_name	title	published	description	length	tag	view_count	like_count	comment_count	collaboration	duration_in_minutes	day_published	year	month	day
-0	0	Joshua Weissman	Perfect Steak Au Poivre	2023-11-15 17:16:05	Check out Google’s Holiday 100 list for trendi...	PT30S	No tags	165706	10342	93	False	0.500000	wednesday	2023	11	15
-1	1	Joshua Weissman	Every Way to Cook Steak (34 Ways)	2023-11-12 15:30:10	The steak recipe to end all recipes. Special t...	PT29M18S	Have tags	1062094	40946	2220	False	29.300000	sunday	2023	11	12
-2	2	Joshua Weissman	I Made The Easiest Ramen Ever	2023-11-08 16:00:23	Easiest Ramen (that's not instant ramen) 3 dif...	PT10M56S	Have tags	1341324	56279	1283	False	10.933333	wednesday	2023	11	8
-3	3	Joshua Weissman	MCRIB At Home With Terry Crews	2023-11-04 19:30:00	NaN	PT31S	No tags	875029	73229	727	False	0.516667	saturday	2023	11	4
-4	4	Joshua Weissman	I Tried Every Fast Food Fried Chicken Sandwich...	2023-11-01 14:30:16	Get MY NEW Cookbook: https://bit.ly/TextureOve...	PT23M1S	Have tags	2678009	85991	6291	False	23.016667	wednesday	2023	11	1
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-1789	1789	Nick DiGiovanni	How To Cook Arctic Char	2020-10-13 01:56:10	The perfect combination of salmon and trout, s...	PT4M55S	Have tags	430600	13068	379	False	4.916667	tuesday	2020	10	13
-1790	1790	Nick DiGiovanni	How To Cook Salmon	2020-09-29 00:12:38	This is salmon made easy. Follow my 80-20 rule...	PT2M31S	Have tags	444451	14634	282	False	2.516667	tuesday	2020	9	29
-1791	1791	Nick DiGiovanni	Beef Wellington	2020-09-14 18:41:27	Beef Wellington doesn't have to be scary. \n\n...	PT8M5S	Have tags	830370	27474	1116	False	8.083333	monday	2020	9	14
-1792	1792	Nick DiGiovanni	Japanese A5 Wagyu Beef	2020-08-31 21:42:22	You can almost eat this steak with a spoon. \n...	PT10M29S	Have tags	795780	20420	592	False	10.483333	monday	2020	8	31
-1793	1793	Nick DiGiovanni	MasterChef Finale Dessert	2019-10-21 13:02:08	Thank you to the entire MasterChef team for su...	PT58S	Have tags	3549046	88542	2935	False	0.966667	monday	2019	10	21
-  </code>
-</pre>
-
-From this simple action, I can see that I don't need that extra first column, so it will be better to remove it. Also, I did some research and I found this website, and I think I'll use the engagement metric in my analysis, so I will add it too. Along with that, I will take advantage and add the collaboration flag to see later if that has an impact on the views.
-
-<pre>
-  <code>
+# Dropping unnecessary column
 df = df.drop('Unnamed: 0', axis=1)
+
+# Adding the 'engagement' and 'collaboration' columns
 df['engagement'] = (df['comment_count'] + df['like_count']) / df['view_count']
 df['collaboration'] = np.where(df['collaboration'] == True, 1, 0)
-df
 
-channel_name	title	published	description	length	tag	view_count	like_count	comment_count	collaboration	duration_in_minutes	day_published	year	month	day	engagement
-0	Joshua Weissman	Perfect Steak Au Poivre	2023-11-15 17:16:05	Check out Google’s Holiday 100 list for trendi...	PT30S	No tags	165706	10342	93	0	0.500000	wednesday	2023	11	15	0.062973
-1	Joshua Weissman	Every Way to Cook Steak (34 Ways)	2023-11-12 15:30:10	The steak recipe to end all recipes. Special t...	PT29M18S	Have tags	1062094	40946	2220	0	29.300000	sunday	2023	11	12	0.040642
-2	Joshua Weissman	I Made The Easiest Ramen Ever	2023-11-08 16:00:23	Easiest Ramen (that's not instant ramen) 3 dif...	PT10M56S	Have tags	1341324	56279	1283	0	10.933333	wednesday	2023	11	8	0.042914
-3	Joshua Weissman	MCRIB At Home With Terry Crews	2023-11-04 19:30:00	NaN	PT31S	No tags	875029	73229	727	0	0.516667	saturday	2023	11	4	0.084518
-4	Joshua Weissman	I Tried Every Fast Food Fried Chicken Sandwich...	2023-11-01 14:30:16	Get MY NEW Cookbook: https://bit.ly/TextureOve...	PT23M1S	Have tags	2678009	85991	6291	0	23.016667	wednesday	2023	11	1	0.034459
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-1789	Nick DiGiovanni	How To Cook Arctic Char	2020-10-13 01:56:10	The perfect combination of salmon and trout, s...	PT4M55S	Have tags	430600	13068	379	0	4.916667	tuesday	2020	10	13	0.031229
-1790	Nick DiGiovanni	How To Cook Salmon	2020-09-29 00:12:38	This is salmon made easy. Follow my 80-20 rule...	PT2M31S	Have tags	444451	14634	282	0	2.516667	tuesday	2020	9	29	0.033561
-1791	Nick DiGiovanni	Beef Wellington	2020-09-14 18:41:27	Beef Wellington doesn't have to be scary. \n\n...	PT8M5S	Have tags	830370	27474	1116	0	8.083333	monday	2020	9	14	0.034430
-1792	Nick DiGiovanni	Japanese A5 Wagyu Beef	2020-08-31 21:42:22	You can almost eat this steak with a spoon. \n...	PT10M29S	Have tags	795780	20420	592	0	10.483333	monday	2020	8	31	0.026404
-1793	Nick DiGiovanni	MasterChef Finale Dessert	2019-10-21 13:02:08	Thank you to the entire MasterChef team for su...	PT58S	Have tags	3549046	88542	2935	0	0.966667	monday	2019	10	21	0.025775
   </code>
 </pre>
 
-Another important thing that I wanted to do before starting to viz this data frame, I wanted to see if I would have missing or irrelevant data.
-
-<pre>
-  <code>
-df['year'].value_counts()
-
-2021    498
-2022    494
-2023    330
-2020    187
-2019    141
-2018    109
-2017     15
-2016     13
-2015      6
-2014      1
-Name: year, dtype: int64
-  </code>
-</pre>
-
-In my opinion, it will be better if I just remove those first 4 years.
-
+I also noticed that some data from the years 2014 to 2017 had limited representation, so I decided to focus on data from 2018 onwards for a more relevant analysis.
 <pre>
   <code>
 df_year_cleaned = df[df['year'] >= 2018]
   </code>
 </pre>
 
-Now, I want to know if I can find a common pattern in the length of the videos submitted by the three YouTubers that I selected.
+To understand the distribution of video lengths, I created a histogram.
 
 <pre>
   <code>
@@ -107,29 +55,15 @@ plt.show()
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/hist.png)
 
-It looks like I have YouTube videos and also Shorts, so I will classify them. 
-According to YouTube the max length of a "short" is 1 minute, so I will use that to the logic.
+The histogram revealed the presence of both regular YouTube videos and Shorts, with Shorts typically lasting around 30 seconds. To classify these videos, I introduced a "short" column based on a 1-minute threshold.
 
 <pre>
   <code>
 df_year_cleaned['short'] = np.where(df_year_cleaned['duration_in_minutes'] <= 1, 1, 0)
-
-	channel_name	title	published	description	length	tag	view_count	like_count	comment_count	collaboration	duration_in_minutes	day_published	year	month	day	engagement	short
-1	Joshua Weissman	Every Way to Cook Steak (34 Ways)	2023-11-12 15:30:10	The steak recipe to end all recipes. Special t...	PT29M18S	Have tags	1062094	40946	2220	0	29.300000	sunday	2023	11	12	0.040642	0
-2	Joshua Weissman	I Made The Easiest Ramen Ever	2023-11-08 16:00:23	Easiest Ramen (that's not instant ramen) 3 dif...	PT10M56S	Have tags	1341324	56279	1283	0	10.933333	wednesday	2023	11	8	0.042914	0
-4	Joshua Weissman	I Tried Every Fast Food Fried Chicken Sandwich...	2023-11-01 14:30:16	Get MY NEW Cookbook: https://bit.ly/TextureOve...	PT23M1S	Have tags	2678009	85991	6291	0	23.016667	wednesday	2023	11	1	0.034459	0
-6	Joshua Weissman	I Tried Food From Every State In America	2023-10-17 14:30:12	Get the NEW COOKBOOK: https://bit.ly/TextureOv...	PT33M53S	Have tags	4623827	139547	26353	0	33.883333	tuesday	2023	10	17	0.035879	0
-8	Joshua Weissman	Meals So Easy A College Student Could Make It	2023-10-13 14:30:09	Cheap and easy meals that everyone can make, w...	PT21M56S	Have tags	2518224	103266	2218	0	21.933333	friday	2023	10	13	0.041888	0
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-1788	Nick DiGiovanni	I Cooked A Deep-Sea Fish	2020-11-02 23:40:52	And it definitely tastes better than it looks!...	PT3M24S	Have tags	2706243	79461	2581	0	3.400000	monday	2020	11	2	0.030316	0
-1789	Nick DiGiovanni	How To Cook Arctic Char	2020-10-13 01:56:10	The perfect combination of salmon and trout, s...	PT4M55S	Have tags	430600	13068	379	0	4.916667	tuesday	2020	10	13	0.031229	0
-1790	Nick DiGiovanni	How To Cook Salmon	2020-09-29 00:12:38	This is salmon made easy. Follow my 80-20 rule...	PT2M31S	Have tags	444451	14634	282	0	2.516667	tuesday	2020	9	29	0.033561	0
-1791	Nick DiGiovanni	Beef Wellington	2020-09-14 18:41:27	Beef Wellington doesn't have to be scary. \n\n...	PT8M5S	Have tags	830370	27474	1116	0	8.083333	monday	2020	9	14	0.034430	0
-1792	Nick DiGiovanni	Japanese A5 Wagyu Beef	2020-08-31 21:42:22	You can almost eat this steak with a spoon. \n...	PT10M29S	Have tags	795780	20420	592	0	10.483333	monday	2020	8	31	0.026404	0
   </code>
 </pre>
 
-Now, what about the title length? I wonder if a relationship or something is interesting about it.
+I also examined the distribution of title lengths.
 
 <pre>
   <code>
@@ -292,39 +226,32 @@ In summary, the strongest correlation between likes and views (0.83) indicates a
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight1.png)
 
-We want to start a YouTube cooking channel, our first videos should be at least 10 minutes long. For our shorts, (because we need to do shorts as well to reach more audience and create our community) should be around 30 seconds.
+Video Lengths: For our cooking channel, we should aim for regular videos to be at least 10 minutes long, and Shorts should be around 30 seconds.
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight2.png)
 
-Along with that, the titles for our videos should be around 50 characters long. In the case of the Shorts, a little less around 20.
+Title Length: Titles for regular videos should ideally be around 50 characters, while Shorts can have shorter titles, approximately 20 characters.
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight3.png)
 
-This proves my previous comment, if we want to reach more views and increase our views, uploading shorts will make the difference, we are not taking into account that we can re-use the format on other platforms to be more efficient in our efforts to reach different people for each site.
+Shorts Impact: Shorts tend to receive a higher engagement rate on average for all three channels, suggesting that creating Shorts can be an effective strategy to engage the audience.
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight4.png)
 
-This graph shows how engagement rates differ between shorts and video formats, again Short has a bigger rate on average for all three channels, this might require more knowledge to understand better what this means, it could be that because are shorts people tend to write and give more likes because it's easier and so on.
+Likes and Views Relationship: There is a strong positive correlation (0.83) between likes and views, indicating that more likes generally lead to more views.
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight5.png)
 
-Thanks to this graph we can use the Views and Likes as good indicators that a video is a success or not.
+Views by Year: The graph shows a decline in views in 2021 and 2022, possibly suggesting that the surge in YouTube viewership during the COVID-19 pandemic may be subsiding.
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight6.png)
 
-As I mentioned before, it looks like that was a bump during COVID-19, and I could say that Nick took advantage of Short to retain the increased views. 
+Views by Day of the Week: Videos uploaded during the weekend tend to receive more views, highlighting the importance of strategic video publishing.
 
-![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7-1.png)
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7.png)
 
-![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7-2.png)
-
-![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7-3.png)
-
-I like to see the pattern of consistency to submit videos, this taught me that in order to get the audience entertained you should have some kind of strategy and pattern to submit videos. 
+Consistency in Uploads: Successful YouTubers follow a consistent pattern in uploading videos, which can help maintain viewer engagement.
 
 ## Conclusion:
 
-You can explore the data here: <https://youtube-project-jt.streamlit.app/>
-
-I really like doing this project, even though I didn't discover some crazy or disruptive that will change the whole platform but I think it gives me a strong basis to start this future project and be more aware of what we need to do.
-
+This project has provided valuable insights into the world of successful cooking YouTube channels. While it didn't reveal groundbreaking discoveries, it has equipped us with a solid foundation to start our own channel. We've also created a web application to explore the data further. <https://youtube-project-jt.streamlit.app/>
