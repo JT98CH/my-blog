@@ -106,23 +106,27 @@ Video Lengths: For our cooking channel, we should aim for regular videos to be a
 
 Title Length: Titles for regular videos should ideally be around 50 characters, while Shorts can have shorter titles, approximately 20 characters.
 
-![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight3.png)
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight4.png)
 
 Shorts Impact: Shorts tend to receive a higher engagement rate on average for all three channels, suggesting that creating Shorts can be an effective strategy to engage the audience.
 
-![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight4.png)
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight5.png)
 
 Likes and Views Relationship: There is a strong positive correlation (0.83) between likes and views, indicating that more likes generally lead to more views.
 
-![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight5.png)
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight6.png)
 
 Views by Year: The graph shows a decline in views in 2021 and 2022, possibly suggesting that the surge in YouTube viewership during the COVID-19 pandemic may be subsiding.
 
-![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight6.png)
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7.png)
 
 Views by Day of the Week: Videos uploaded during the weekend tend to receive more views, highlighting the importance of strategic video publishing.
 
-![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight7.png)
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight8-1.png)
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight8-2.png)
+
+![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/insight8-3.png)
 
 Consistency in Uploads: Successful YouTubers follow a consistent pattern in uploading videos, which can help maintain viewer engagement.
 
