@@ -61,7 +61,7 @@ The graph shows that it follows a normal distribution, I will consider that as s
 
 Now let's dive into the actually fun part
 
-Do you think there's a relationship between likes and views?
+<b>Do you think there's a relationship between likes and views?</b>
 Let's see
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/scatter.png)
@@ -72,7 +72,7 @@ I'm not sure, but it kind of looks linear, so let's see something better
 
 It's interesting to see the different slops for each YouTuber but it's indeed linear
 
-What about the relationship between the length of the videos and their view?
+<b>What about the relationship between the length of the videos and their view?</b>
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/line2.png)
 
@@ -86,11 +86,12 @@ That's cool, it confirms that Nick DiGiovanni is a bigger YouTuber. Also, I like
 
 It looks like the bump of Covid is ending and fewer people are spending time on YouTube, or we need to wait until the year 2023 finishes, or people are getting less excited about Food and Cooking
 
-What about the relationship between their submission day and the view? Let's find out
+<b>What about the relationship between their submission day and the view?</b> Let's find out
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/boxplot3.png)
 
 I'm not surprised that videos that were uploaded during the weekend get more views, so this confirms my theory
+So, <b>is there any correlation then?</b>
 
 ![Test Image](https://raw.githubusercontent.com/JT98CH/my-blog/main/assets/images/output.png)
 
