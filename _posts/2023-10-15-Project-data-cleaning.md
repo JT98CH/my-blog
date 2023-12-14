@@ -30,7 +30,7 @@ As with any adventure, it began with the basics, setting up. So, I set up the Py
 
 `from googleapiclient.discovery import build`
 
-Another important tool is the Google API client. I won’t get into the details about how to get a key because, at the beginning of this post, I shared a video that’s better than me in explaining that, so check that first. I just securely read the key from a file. The most
+Another important tool is the Google API client. I won’t get into the details about how to get a key because, at the beginning of this post, I shared a video that’s better than me in explaining that, so check that first. I just securely read the key from a file.
 
 <pre>
   <code>
